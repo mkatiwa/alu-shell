@@ -2,14 +2,14 @@
 # This script displays "Best School" 9 times and the las t line hi using while
 
 a=1
-while [ $a -lt 10 ]
-do 
-	echo "Best school"
-	((a++))
-done
-n=9
-while [ $n -lt 10 ]
+while [ $a -le 10 ];
 do
-	echo "hi"
-	((n++))
+	if [ $a == 9 ]; then
+		echo "Best School"
+		echo "Hi"
+		a=$((a+1))
+	else 
+		echo "Best School"
+		a=$((a+1))
+	fi	
 done
