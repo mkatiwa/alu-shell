@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" using until
+
+a=1
+until [ ! $a -lt 11 ]
+do 
+	echo "Best School"
+	((a++))
+done
