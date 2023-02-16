@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script displays a comand that stops without using kill or killall
+
+pkill -f beyond
